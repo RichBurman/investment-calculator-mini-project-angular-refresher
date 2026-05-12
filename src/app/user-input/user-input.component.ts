@@ -23,6 +23,7 @@ export class UserInputComponent {
 
   onSubmit() {
     this.calculate.emit({
+      // The "+" operator converts the string to a number
       initialInvestment: +this.enteredInitialInvestment,
       duration: +this.enteredDuration,
       expectedReturn: + this.enteredExpectedReturn,
