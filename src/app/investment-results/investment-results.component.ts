@@ -7,11 +7,10 @@ import { InvestmentService } from '../investment.service';
   standalone: true,
   imports: [CurrencyPipe],
   templateUrl: './investment-results.component.html',
-  styleUrl: './investment-results.component.css'
+  styleUrl: './investment-results.component.css',
 })
 export class InvestmentResultsComponent {
   private investmentService = inject(InvestmentService);
 
-  results = computed(() =>  this.investmentService.resultsData())  
-  
+  results = computed(() => this.investmentService.resultsData());
 }

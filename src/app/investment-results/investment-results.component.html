@@ -12,15 +12,15 @@
       </tr>
     </thead>
     <tbody>
-        @for (result of results(); track result.year) {
-            <tr>
-                <td>{{ result.year }}</td>
-                <td>{{ result.valueEndOfYear | currency:"GBP" }}</td>
-                <td>{{ result.interest | currency:"GBP"}}</td>
-                <td>{{ result.totalInterest | currency:"GBP"}}</td>
-                <td>{{ result.totalAmountInvested | currency:"GBP" }}</td>
-            </tr>
-        }
+      @for (result of results(); track result.year) {
+        <tr>
+          <td>{{ result.year }}</td>
+          <td>{{ result.valueEndOfYear | currency: "GBP" }}</td>
+          <td>{{ result.interest | currency: "GBP" }}</td>
+          <td>{{ result.totalInterest | currency: "GBP" }}</td>
+          <td>{{ result.totalAmountInvested | currency: "GBP" }}</td>
+        </tr>
+      }
     </tbody>
   </table>
 }
